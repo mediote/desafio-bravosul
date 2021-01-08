@@ -1,9 +1,6 @@
-<p align="center">
-  <img src="https://storage.googleapis.com/golden-wind/unform/unform.svg" height="150" width="175" alt="Unform" />
-</p>
 
 <h3 align="center">
-  Easy peasy highly scalable ReactJS & React Native forms! 🚀
+  Desafio para criação de um CRUD simples de produtos com ReactJS 🚀
 </h3>
 
 <br>
