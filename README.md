@@ -8,7 +8,7 @@
 
 ## Informações gerais
 
-Crud de produtos com autenticação JWT usando hooks e context api.
+Crud de produtos com autenticação JWT usando hooks e context api. Orientações em https://github.com/joaosf/front-end-challenge .
 ## Principais bibliotecas usadas
 
 - **[Unform](https://unform.dev/guides/basic-form)**
