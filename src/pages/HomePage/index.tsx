@@ -30,11 +30,10 @@ const HomePage: React.FC = () => {
 
       const productActived = productList
         .filter(productEnabled => productEnabled.enabled === true)
-        // eslint-disable-next-line array-callback-return
         .map(productEnabled => {
           return productEnabled;
         });
-      console.log(productActived);
+
       setProducts(productActived);
     });
   }, []);
@@ -45,9 +44,7 @@ const HomePage: React.FC = () => {
         <HeaderContent>
           <img src={logoImg} alt="BravoSul" />
           <HeaderLinks>
-            <Link to="/profile">
-              <strong>Sobre</strong>
-            </Link>
+            <a href="https://github.com/mediote/desafio-bravosul">Sobre</a>
 
             <Link to="/signin">
               <strong>Login</strong>

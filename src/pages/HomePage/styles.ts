@@ -25,6 +25,7 @@ export const HeaderLinks = styled.div`
   a {
     padding: 5px;
     text-decoration: none;
+    font-weight: bold;
     color: #000;
     &:hover {
       opacity: 0.8;

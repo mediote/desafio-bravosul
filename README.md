@@ -22,3 +22,4 @@ Após clonar o repositório do projeto, para executa-lo, basta digitar os seguin
 
 2. yarn start
 
+Para obter informações de login consulte:  https://github.com/joaosf/front-end-challenge .
