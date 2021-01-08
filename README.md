@@ -18,6 +18,6 @@ Crud de produtos com autenticação JWT usando hooks e context api. Orientaçõe
 ## Executar o projeto
 Após clonar o repositório do projeto, para executa-lo, basta digitar os seguintes comandos:
 
-#yarn install
-#yarn start
+yarn install
+yarn start
 
