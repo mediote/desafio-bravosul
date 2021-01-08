@@ -6,7 +6,7 @@
 <br>
 
 
-## Informações gerais sobra a aplicação
+## Informações gerais sobre a aplicação
 
 Crud de produtos com autenticação JWT usando hooks e context api. O código foi escrtito em TypeScript, mais orientações em https://github.com/joaosf/front-end-challenge .
 ## Principais tecnologias usadas
