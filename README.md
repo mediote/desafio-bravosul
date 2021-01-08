@@ -18,8 +18,8 @@ Crud de produtos com autenticação JWT usando hooks e context api. Orientaçõe
 ## Executar o projeto
 Após clonar o repositório do projeto, para executa-lo, basta digitar os seguintes comandos:
 
-1. yarn install
+1. yarn install ou npm install
 
-2. yarn start
+2. yarn start ou npm start
 
 Para obter informações de login consulte:  https://github.com/joaosf/front-end-challenge .
