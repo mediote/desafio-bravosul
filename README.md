@@ -8,9 +8,10 @@
 
 ## Informações gerais
 
-Crud de produtos com autenticação JWT usando hooks e context api. Orientações em https://github.com/joaosf/front-end-challenge .
-## Principais bibliotecas usadas
+Crud de produtos com autenticação JWT usando hooks e context api. O código foi escrtito em TypeScript, mais orientações em https://github.com/joaosf/front-end-challenge .
+## Principais tecnologias usadas
 
+- **[TypeScript](https://www.typescriptlang.org/)**
 - **[Unform](https://unform.dev/guides/basic-form)**
 - **[Styled Components](https://styled-components.com/)**
 - **[Material Ui](https://material-ui.com/pt/)**
