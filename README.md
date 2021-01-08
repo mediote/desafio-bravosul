@@ -7,14 +7,11 @@
 
 
 
-## Overview
+## Principais bibliotecas usadas
 
-Unform is a performance focused library that helps you creating beautiful forms in ReactJS & React Native with the power of uncontrolled components performance and React Hooks.
-
-- **[Getting started](https://unform.dev/)**
-- **[Documentation](https://unform.dev/guides/basic-form)**
-- **[Why Unform?](https://unform.dev/why-unform)**
-- **[FAQ](https://unform.dev/faq)**
+- **[Unform](https://unform.dev/guides/basic-form)**
+- **[Styled Components](https://styled-components.com/)**
+- **[Material Ui](https://material-ui.com/pt/)**
 
 Wanna test Unform before using it?
 
