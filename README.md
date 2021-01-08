@@ -6,7 +6,9 @@
 <br>
 
 
+## Informações gerais
 
+Crud de produtos com autenticação JWT usando hooks e context api.
 ## Principais bibliotecas usadas
 
 - **[Unform](https://unform.dev/guides/basic-form)**
@@ -15,4 +17,7 @@
 
 ## Executar o projeto
 Após clonar o repositório do projeto, para executa-lo, basta digitar os seguintes comandos:
+
+#yarn install
+#yarn start
 
