@@ -1,9 +1,7 @@
 /* eslint-disable no-alert */
-import React, { FormEvent, useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FiArrowLeft } from 'react-icons/fi';
 import { Link, useHistory, useRouteMatch } from 'react-router-dom';
-
-import SaveIcon from '@material-ui/icons/ExitToApp';
 
 import { Form } from '@unform/web';
 import { AnimationContainer, Container, Content } from './styles';
