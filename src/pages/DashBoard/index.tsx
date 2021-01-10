@@ -74,11 +74,7 @@ const DashBoard: React.FC = () => {
 
       <Content>
         <Section>
-          <Fab
-            onClick={() => handleAddProduct()}
-            color="primary"
-            aria-label="add"
-          >
+          <Fab onClick={() => handleAddProduct()} aria-label="add">
             <AddIcon />
           </Fab>
           {products.map(product => (

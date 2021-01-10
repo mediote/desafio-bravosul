@@ -71,6 +71,12 @@ export const Section = styled.section`
   > button {
     position: fixed;
     margin-top: -70px;
+    background: #00b35c;
+    color: #fff;
+
+    &:hover {
+      background: ${shade(0.2, '#00b35c')};
+    }
   }
 `;
 
