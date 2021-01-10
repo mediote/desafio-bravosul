@@ -22,7 +22,7 @@ export const HeaderContent = styled.div`
   }
 `;
 
-export const Profile = styled.text`
+export const Profile = styled.div`
   display: flex;
 
   div {
