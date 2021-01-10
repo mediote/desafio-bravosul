@@ -1,24 +1,69 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { TextareaHTMLAttributes } from 'react';
+/* eslint-disable react/prop-types */
+import React, {
+  useEffect,
+  useRef,
+  useState,
+  useCallback,
+  TextareaHTMLAttributes,
+} from 'react';
+import { IconBaseProps } from 'react-icons';
+import { useField } from '@unform/core';
 
-import './styles.css';
+import { Container } from './styles';
 
-interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
-  label: string;
+interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   name: string;
+  containerStyle?: object;
+  icon?: React.ComponentType<IconBaseProps>;
 }
 
-const Textarea: React.FC<TextareaProps> = ({
-  label,
+const TextArea: React.FC<TextAreaProps> = ({
   name,
+  containerStyle = {},
+  icon: Icon,
   ...rest
-}: TextareaProps) => {
+}) => {
+  const inputRef = useRef<HTMLTextAreaElement>(null);
+  const [isFocused, setIsFocused] = useState(false);
+  const [isFilled, setIsFilled] = useState(false);
+  const { fieldName, defaultValue, error, registerField } = useField(name);
+
+  useEffect(() => {
+    registerField({
+      name: fieldName,
+      ref: inputRef.current,
+      path: 'value',
+    });
+  }, [fieldName, registerField]);
+
+  const handleInputFocus = useCallback(() => {
+    setIsFocused(true);
+  }, []);
+
+  const handleInputBlur = useCallback(() => {
+    setIsFocused(false);
+
+    setIsFilled(!!inputRef.current?.value);
+  }, []);
+
   return (
-    <div className="textarea-block">
-      <label htmlFor={name}>{label}</label>
-      <textarea id={name} {...rest} />
-    </div>
+    <Container
+      style={containerStyle}
+      isErrored={!!error}
+      isFilled={isFilled}
+      isFocused={isFocused}
+    >
+      {Icon && <Icon size={20} />}
+      <textarea
+        onFocus={handleInputFocus}
+        onBlur={handleInputBlur}
+        defaultValue={defaultValue}
+        ref={inputRef}
+        {...rest}
+      />
+    </Container>
   );
 };
 
-export default Textarea;
+export default TextArea;

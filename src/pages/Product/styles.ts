@@ -39,32 +39,12 @@ export const AnimationContainer = styled.div`
     width: 400px;
     text-align: center;
 
-    legend {
-      margin-bottom: 24px;
+    h1 {
+      margin-bottom: 25px;
     }
 
-    input {
-      margin-bottom: 24px;
-    }
-
-    textarea {
-      margin-bottom: 24px;
-    }
-
-    > button {
-      width: 250px;
-      height: 50 px;
-      border-radius: 10px;
-      border: none;
-      margin-left: 5px;
-      background: #00b35c;
-      color: #fff;
-      text-transform: none;
-      position: static;
-
-      &:hover {
-        background: ${shade(0.2, '#00b35c')};
-      }
+    > div {
+      margin-bottom: 25px;
     }
   }
   > a {

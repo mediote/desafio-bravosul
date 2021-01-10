@@ -1,17 +1,18 @@
 /* eslint-disable no-alert */
-import React, { FormEvent, useEffect, useState } from 'react';
+import React, { FormEvent, useCallback, useEffect, useState } from 'react';
 import { FiArrowLeft } from 'react-icons/fi';
 import { Link, useHistory, useRouteMatch } from 'react-router-dom';
 
-import Button from '@material-ui/core/Button';
 import SaveIcon from '@material-ui/icons/ExitToApp';
 
+import { Form } from '@unform/web';
 import { AnimationContainer, Container, Content } from './styles';
 
-import FormInput from '../../components/FormInput';
+import Input from '../../components/Input';
+import TextArea from '../../components/TextArea';
 
-import Textarea from '../../components/Textarea';
 import api from '../../services/api';
+import Button from '../../components/Button';
 
 interface ProductsParams {
   id: string;
@@ -49,10 +50,8 @@ const Product: React.FC = () => {
     }
   }, [product]);
 
-  function handleCreateProduct(e: FormEvent) {
+  function handleCreateProduct() {
     if (!product) {
-      e.preventDefault();
-
       api
         .post('products', {
           name,
@@ -81,35 +80,26 @@ const Product: React.FC = () => {
     <Container>
       <Content>
         <AnimationContainer>
-          <form onSubmit={handleCreateProduct}>
-            <legend>Dados do Produto</legend>
-            <FormInput
+          <Form onSubmit={handleCreateProduct}>
+            <h1>Dados do produto</h1>
+            <Input
               name="name"
-              label="Nome"
               value={name}
+              placeholder="Nome do produto"
               onChange={e => {
                 setName(e.target.value);
               }}
             />
-            <Textarea
+            <TextArea
               name="description"
-              label="Descricao"
+              placeholder="Descrição do produto"
               value={description}
               onChange={e => {
                 setDescription(e.target.value);
               }}
             />
-
-            <Button
-              type="submit"
-              variant="contained"
-              color="primary"
-              size="large"
-              startIcon={<SaveIcon />}
-            >
-              Gravar
-            </Button>
-          </form>
+            <Button type="submit">Gravar</Button>
+          </Form>
           <Link to="/products">
             <FiArrowLeft />
             Voltar

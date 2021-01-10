@@ -44,7 +44,12 @@ const HomePage: React.FC = () => {
         <HeaderContent>
           <img src={logoImg} alt="BravoSul" />
           <HeaderLinks>
-            <a href="https://github.com/mediote/desafio-bravosul">Sobre</a>
+            <a
+              href="https://github.com/mediote/desafio-bravosul"
+              target="blank"
+            >
+              Sobre
+            </a>
             <Link to="/signin">
               <strong>Login</strong>
             </Link>
