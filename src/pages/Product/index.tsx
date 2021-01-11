@@ -7,7 +7,7 @@ import { Form } from '@unform/web';
 import { AnimationContainer, Container, Content } from './styles';
 
 import Input from '../../components/Input';
-import TextArea from '../../components/TextArea';
+import TextArea from '../../components/Textarea';
 
 import api from '../../services/api';
 import Button from '../../components/Button';

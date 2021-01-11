@@ -13,7 +13,7 @@ body{
 
 }
 
-body, input, button, textarea{
+body, input, button, textarea, p{
 font: 16px Roboto,sans-serif;
 }
 

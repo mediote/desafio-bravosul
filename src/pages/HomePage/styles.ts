@@ -78,9 +78,7 @@ export const Product = styled.div`
     flex-direction: column;
   }
 
-  strong {
-    padding: 5px;
-    color: #999591;
-    font-size: 16px;
+  p {
+    margin-bottom: 30px;
   }
 `;

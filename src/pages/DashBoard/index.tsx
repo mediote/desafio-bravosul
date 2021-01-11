@@ -81,8 +81,8 @@ const DashBoard: React.FC = () => {
           {products.map(product => (
             <Product key={product.id}>
               <div>
-                <strong>{product.name}</strong>
-                <strong>{product.description}</strong>
+                <p>{product.name}</p>
+                <p>{product.description}</p>
               </div>
               <ButtonsContainer>
                 <div>
